@@ -1,0 +1,131 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SITE_EMAIL, SITE_NAME } from "../var";
+const description = `Terms of Service for ${SITE_NAME} - Read our service agreement and user responsibilities.`;
+---
+
+<Layout title="Terms of Service" description={description} scrollable={true}>
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl font-bold text-gray-900 mb-8">Terms of Service</h1>
+
+      <div class="prose prose-lg max-w-none">
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            1. Service Description
+          </h2>
+          <p class="text-gray-600 mb-4">
+            Welcome to our website (hereinafter referred to as the "Website").
+            By accessing or using this website, you agree to these Terms of
+            Service (hereinafter referred to as the "Terms"). Please read them
+            carefully. If you do not agree, you must stop using this website.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            2. User Responsibilities
+          </h2>
+          <p class="text-gray-600 mb-4">As a user, you agree to:</p>
+          <ul class="list-disc pl-6 text-gray-600 space-y-2">
+            <li>
+              Provide truthful, accurate, and complete personal information
+            </li>
+            <li>Comply with all applicable laws and regulations</li>
+            <li>Not engage in any behavior that may harm service operations</li>
+            <li>
+              Protect account security and be responsible for account activities
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            3. Intellectual Property
+          </h2>
+          <p class="text-gray-600 mb-4">
+            All rights, ownership, and interests in {SITE_NAME}, including but
+            not limited to software, interface design, technical documentation,
+            etc., are owned by {SITE_NAME}. Users may not:
+          </p>
+          <ul class="list-disc pl-6 text-gray-600 space-y-2">
+            <li>Copy, modify, or distribute software code</li>
+            <li>Crack or reverse engineer software</li>
+            <li>Remove or modify copyright information</li>
+            <li>Use our trademarks and brand assets without authorization</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            4. Paid Services
+          </h2>
+          <p class="text-gray-600 mb-4">Regarding paid services:</p>
+          <ul class="list-disc pl-6 text-gray-600 space-y-2">
+            <li>All payments are final payments and non-refundable</li>
+            <li>
+              Prices may change at any time, but do not affect purchased
+              services
+            </li>
+            <li>Some features may require additional payments</li>
+            <li>Subscriptions will automatically renew unless you cancel</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            5. Disclaimer
+          </h2>
+          <p class="text-gray-600 mb-4">
+            Our services are provided as-is, without any express or implied
+            warranties. We do not warrant the accuracy, reliability,
+            applicability, or timeliness of our services. To the extent
+            permitted by law, we are not liable for any direct, indirect,
+            incidental, special, or consequential damages.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            6. Service Changes and Termination
+          </h2>
+          <p class="text-gray-600 mb-4">
+            We reserve the right to modify or terminate services at any time
+            without prior notice. If you violate the terms of service, we may
+            suspend or terminate your account access. After service termination,
+            you may not be able to access your account data.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            7. Dispute Resolution
+          </h2>
+          <p class="text-gray-600 mb-4">
+            These terms of service are governed by applicable laws. Any disputes
+            should be resolved through friendly negotiation. If negotiation
+            fails, disputes should be submitted to courts with jurisdiction for
+            resolution.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            8. Contact Information
+          </h2>
+          <p class="text-gray-600 mb-4">
+            If you have any questions about these terms of service, please
+            contact us:
+          </p>
+          <p class="text-gray-600">
+            Email: <a
+              href={`mailto:${SITE_EMAIL}`}
+              class="text-blue-600 hover:text-blue-800 cursor-pointer"
+              >{SITE_EMAIL}</a
+            >
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</Layout>

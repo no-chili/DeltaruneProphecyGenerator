@@ -1,0 +1,120 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SITE_EMAIL, SITE_NAME } from "../var";
+const description = `Privacy Policy for ${SITE_NAME} - Learn how we collect, use, and protect your information.`;
+---
+
+<Layout title="Privacy Policy" description={description} scrollable={true}>
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl font-bold text-gray-900 mb-8">Privacy Policy</h1>
+      <div class="prose prose-lg max-w-none">
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            1. Information Collection
+          </h2>
+          <p class="text-gray-600 mb-4">
+            The types of information we collect include:
+          </p>
+          <ul class="list-disc pl-6 text-gray-600 space-y-2">
+            <li>
+              Personal information you voluntarily provide (such as registration
+              information)
+            </li>
+            <li>
+              Information automatically collected when using our services (such
+              as device information, usage records)
+            </li>
+            <li>
+              Information from third parties (such as when you log in with a
+              third-party account)
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            2. Information Usage
+          </h2>
+          <p class="text-gray-600 mb-4">We use the collected information to:</p>
+          <ul class="list-disc pl-6 text-gray-600 space-y-2">
+            <li>Provide, maintain, and improve our services</li>
+            <li>Send service notifications and updates</li>
+            <li>Prevent fraud and enhance security</li>
+            <li>Conduct data analysis and service optimization</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            3. Information Protection
+          </h2>
+          <p class="text-gray-600 mb-4">
+            We take the following measures to protect your information:
+          </p>
+          <ul class="list-disc pl-6 text-gray-600 space-y-2">
+            <li>Use encryption technology to protect data transmission</li>
+            <li>Regularly backup data and conduct security audits</li>
+            <li>Restrict employee access to personal information</li>
+            <li>Sign confidentiality agreements with partners</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            4. Information Sharing
+          </h2>
+          <p class="text-gray-600 mb-4">
+            We may share your information in the following circumstances:
+          </p>
+          <ul class="list-disc pl-6 text-gray-600 space-y-2">
+            <li>With your explicit consent</li>
+            <li>As required by law or government authorities</li>
+            <li>To protect the legitimate interests of the company or users</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            5. Cookie Usage
+          </h2>
+          <p class="text-gray-600 mb-4">
+            We use cookies and similar technologies to provide and support our
+            services. You can control cookie usage through your browser
+            settings. However, please note that disabling cookies may affect the
+            use of certain features.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            6. Privacy Policy Updates
+          </h2>
+          <p class="text-gray-600 mb-4">
+            We may update this privacy policy from time to time. If there are
+            significant changes, we will notify you through website notices or
+            email notifications. Continued use of our services indicates your
+            agreement to the new privacy policy.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            7. Contact Us
+          </h2>
+          <p class="text-gray-600 mb-4">
+            If you have any questions or suggestions about this privacy policy,
+            please contact us through the following method:
+          </p>
+          <p class="text-gray-600">
+            Email: <a
+              href={`mailto:${SITE_EMAIL}`}
+              class="text-blue-600 hover:text-blue-800 cursor-pointer"
+              >{SITE_EMAIL}</a
+            >
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,14 @@
+---
+import { ProphecyGenerator } from "@/components/react/ProphecyGenerator";
+import Layout from "../layouts/Layout.astro";
+
+const title = "Deltarune Prophecy Generator - Create Your Own Prophecy Panels";
+const description =
+  "Create stunning Deltarune-style prophecy panels with our free online generator. Upload monochrome images, add prophecy text, and generate professional-quality panels inspired by the game's mysterious sequences.";
+const keywords =
+  "deltarune prophecy generator, prophecy panel creator, deltarune fan art, prophecy text generator, monochrome image converter, deltarune prophecy maker, free prophecy panel tool";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <ProphecyGenerator client:load />
+</Layout>

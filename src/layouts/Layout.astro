@@ -1,0 +1,49 @@
+---
+import Feedback from "@/components/react/feedback";
+import "../styles/global.css";
+import { SITE_NAME } from "../var";
+
+export interface Props {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  scrollable?: boolean;
+}
+
+const {
+  title = `${SITE_NAME} - AI-Powered Productivity App`,
+  description = `${SITE_NAME} is an AI-powered app that helps users overcome procrastination and improve productivity by breaking down goals into manageable steps.`,
+  keywords = "Step Joy, productivity, procrastination, AI assistant, goal management, task breakdown",
+  scrollable = false,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/logo.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=630&fit=crop"
+    />
+  </head>
+  <body
+    class={scrollable
+      ? "min-h-screen"
+      : "min-h-screen sm:h-screen sm:overflow-hidden"}
+  >
+    <div class={scrollable ? "" : "h-full"}>
+      <slot />
+    </div>
+    <Feedback client:load />
+  </body>
+</html>

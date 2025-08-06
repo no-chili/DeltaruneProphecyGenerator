@@ -1,0 +1,19 @@
+---
+import { MonochromeTool } from "@/components/react/MonochromeTool";
+import Layout from "../layouts/Layout.astro";
+
+const title = "Monochrome Image Converter - Convert Images to Black & White";
+const description =
+  "Convert your images to monochrome (black and white) format for use with our Deltarune Prophecy Generator. Free online tool to create high-contrast monochrome images.";
+const keywords =
+  "monochrome converter, black and white image converter, image to monochrome, deltarune prophecy generator, image processing tool, free monochrome converter";
+---
+
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  scrollable={true}
+>
+  <MonochromeTool client:load />
+</Layout>
