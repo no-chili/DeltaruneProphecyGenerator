@@ -21,6 +21,19 @@ const {
 <!doctype html>
 <html lang="en" class="dark">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src={`https://www.googletagmanager.com/gtag/js?id=G-YFXP6WBRFM`}
+      type="text/partytown"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        dataLayer.push(arguments);
+      };
+      window.gtag("js", new Date());
+      window.gtag("config", "G-YFXP6WBRFM");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/logo.png" />
