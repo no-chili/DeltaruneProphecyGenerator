@@ -16,9 +16,9 @@ export const ProphecyGenerator: React.FC<ProphecyGeneratorProps> = ({
   // State
   const [text, setText] = useState("Your prophecy here");
   const [style, setStyle] = useState<"default" | "susie" | "final">("default");
-  const [imageScale, setImageScale] = useState(1);
+  const [imageScale, setImageScale] = useState(1.3);
   const [imageYOffset, setImageYOffset] = useState(0);
-  const [fontScale, setFontScale] = useState(1);
+  const [fontScale, setFontScale] = useState(1.2);
   const [fontYOffset, setFontYOffset] = useState(0);
   const [maskImage, setMaskImage] = useState<HTMLImageElement | null>(null);
   const [customFont, setCustomFont] = useState<string>("ProphecyType");
@@ -55,7 +55,9 @@ export const ProphecyGenerator: React.FC<ProphecyGeneratorProps> = ({
     img.src = URL.createObjectURL(file);
   };
 
-  const handleTextChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleTextChange = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const newText = event.target.value || "Your prophecy here";
     setText(newText);
   };

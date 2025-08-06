@@ -323,7 +323,11 @@ export const ProphecyCanvas: React.FC<ProphecyCanvasProps> = ({
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
 
-        const textY = canvasSize * 0.22 + (32 * fontScale) / 2 + fontYOffset;
+        const textY =
+          canvasSize * 0.22 +
+          (32 * fontScale) / 2 +
+          fontYOffset +
+          floatOffsetRef.current;
 
         lines.forEach((line, index) => {
           const y = textY + index * (32 * fontScale * 1.2);
@@ -435,8 +439,12 @@ export const ProphecyCanvas: React.FC<ProphecyCanvasProps> = ({
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
 
-      // Calculate text position - place text in upper part of canvas with Y offset
-      const textY = canvasSize * 0.22 + (32 * fontScale) / 2 + fontYOffset;
+      // Calculate text position - place text in upper part of canvas with Y offset and float effect
+      const textY =
+        canvasSize * 0.22 +
+        (32 * fontScale) / 2 +
+        fontYOffset +
+        floatOffsetRef.current;
 
       // Draw text with texture effect
       lines.forEach((line, index) => {
