@@ -10,7 +10,7 @@ export default defineConfig({
   server: {
     allowedHosts: true,
   },
-  site: "https://www.example.com",
+  site: "https://deltarune-prophecy-generator.com",
   integrations: [
     react(),
     sitemap(),
