@@ -275,7 +275,7 @@ export const ProphecyControls: React.FC<ProphecyControlsProps> = ({
                   </span>
                 </div>
                 <div className="text-xs">
-                  © 2024 Deltarune Prophecy. All rights reserved.
+                  © 2025 Deltarune Prophecy. All rights reserved.
                 </div>
               </div>
               <div className="flex flex-wrap gap-4">
